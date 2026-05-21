@@ -32,7 +32,7 @@ export const MY_STACK = {
         },
         {
             name:'C++',
-            icon:'/logo/Cpp.webp'
+            icon:'/logo/cpp.webp'
         },
     ],
     frontend: [
