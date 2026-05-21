@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Aaditya Kumar Sahu} \\ \vspace{4pt}
+    {\small +91 7017356174 $|$
+    \href{mailto:aadityasahu1203@gmail.com}{\underline{aadityasahu1203@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/aaditya-kumar-sahu-aadicoder/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/aadicoder1}{\underline{GitHub}} $|$
+    \href{https://aadicoder1.netlify.app}{\underline{Portfolio}}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \small{
+    IT undergraduate skilled in building full-stack web applications using Python, Flask, Django, and FastAPI. Built real-world projects including an AI-powered multilingual document intelligence system and a hackathon-demonstrated community platform. Seeking a software development internship to contribute and grow.
+  }
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {G.L. Bajaj Institute of Technology and Management}{Greater Noida, India}
+      {Bachelor of Technology in Information Technology}{2024 -- 2028}
+      \resumeItemListStart
+        \resumeItem{CGPA: 7.77}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Kendriya Vidyalaya No. 2, Agra Cantt.}{Agra, India}
+      {Class XII -- 76.6\% $|$ Class X -- 89.6\%}{2022 -- 2024}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (OOP), Python (OOP), C} \\
+     \textbf{Frameworks}{: Flask, Django, FastAPI} \\
+     \textbf{Web}{: HTML, CSS, Bootstrap, JavaScript (basic)} \\
+     \textbf{Databases}{: SQLite, MySQL, PostgreSQL} \\
+     \textbf{Tools}{: Git, GitHub} \\
+     \textbf{APIs}{: HuggingFace Inference API} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{KMRL SmartDocs -- AI Document Intelligence System} $|$ \emph{FastAPI, HuggingFace, HTML/CSS} $|$ \href{https://github.com/aadicoder1/KMRL_DMS}{\underline{GitHub}}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built an AI-powered document intelligence system inspired by a Smart India Hackathon (SIH) problem statement for Kochi Metro Rail Limited (KMRL).}
+        \resumeItem{Integrated HuggingFace Inference API to summarize uploaded documents across all major Indian regional languages including Hindi, Tamil, Telugu, and Malayalam.}
+        \resumeItem{Developed FastAPI backend with SQLite for document storage; clean HTML/CSS frontend for upload and multilingual summary display.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{SocioSphere -- Community Issue Reporting Platform} $|$ \emph{Flask, OAuth, SQLite, Bootstrap} $|$ \href{https://github.com/aadicoder1/SocioSphere}{\underline{GitHub}} }{2025}
+      \resumeItemListStart
+        \resumeItem{Built and demonstrated at \textbf{HackLoop}, an inter-city hackathon at Thoughtworks, Gurugram, competing against participants from multiple cities.}
+        \resumeItem{Flask web app enabling citizens to report community issues with location and images; NGOs can view, manage, and resolve reports across 15+ routes.}
+        \resumeItem{Implemented OAuth-based authentication with role-based access control; deployed live on Render.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Echo -- Music Player Web App} $|$ \emph{Django, SQLite, HTML/CSS} $|$ \href{https://github.com/aadicoder1/musicplayer}{\underline{GitHub}}}{2024}
+      \resumeItemListStart
+        \resumeItem{Built a full-stack Django music player as a self-initiated learning project after completing a Python/Django bootcamp.}
+        \resumeItem{Implemented core features including track listing, like/unlike functionality, and next/previous playback controls with a custom-designed HTML/CSS frontend.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {GDG on Campus -- GL Bajaj}{Greater Noida, India}
+      {Developer}{Oct 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Selected as Developer through an interview process for the Google Developer Group campus chapter.}
+        \resumeItem{Contributed frontend code to the official GDG GLBITM club website and assisted in organizing technical events and workshops.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{HackLoop Hackathon} -- Participated and presented SocioSphere at an inter-city hackathon hosted at Thoughtworks, Gurugram (2025).}
+    \resumeSubItem{\textbf{Smart India Hackathon (SIH)} -- Cleared internal college selection round with an AI document intelligence solution (2025).}
+    \resumeSubItem{\textbf{DSA Course} -- Currently completing a structured Data Structures \& Algorithms course; certification in progress.}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

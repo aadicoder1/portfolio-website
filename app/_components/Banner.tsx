@@ -1,5 +1,6 @@
 'use client';
 import ArrowAnimation from '@/components/ArrowAnimation';
+import { MoveUpRight } from 'lucide-react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -60,8 +61,7 @@ const Banner = () => {
             <ArrowAnimation />
             <div
                 className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col"
-                ref={containerRef}
-            >
+                ref={containerRef}>
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[744px]">
                     {/* 🔹 Typing Animation Here */}
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton text-primary whitespace-pre-line">
@@ -76,6 +76,24 @@ const Banner = () => {
                         . A creative Developer turning ideas into smooth, user-friendly digital experiences. 
                         I love crafting interfaces and interactions that make technology feel effortless and intuitive.
                     </p>
+
+                    <div className="slide-up-and-fade mt-8 flex items-center gap-4">
+                        <a
+                            href="/Resume/Aaditya_Kumar_Sahu-Resume.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium rounded-md text-sm hover:opacity-90 transition-opacity">
+                            View Resume
+                            <MoveUpRight size={14} />
+                        </a>
+                        <a
+                            href="/Resume/Aaditya_Kumar_Sahu-Resume.pdf"
+                            download
+                            className="inline-flex items-center gap-2 px-5 py-2.5 border border-border text-foreground font-medium rounded-md text-sm hover:bg-muted transition-colors">
+                            Download 
+                        </a>
+                    </div>
+
                 </div>
 
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">

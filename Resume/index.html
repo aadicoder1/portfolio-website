@@ -1,140 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Resume - Aaditya Kumar Sahu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      color: #333;
-      background: #fff;
-    }
-    h1, h2 {
-      color: #0E5484;
-      border-bottom: 2px solid #0E5484;
-      padding-bottom: 4px;
-      margin-top: 40px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.2em;
-      margin-bottom: 5px;
-    }
-    .contact {
-      text-align: center;
-      font-size: 0.9em;
-      margin-bottom: 25px;
-    }
-    .section {
-      margin-top: 25px;
-    }
-    .subheading {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 3px;
-      color: #130810;
-    }
-    ul {
-      padding-left: 20px;
-      margin-top: 5px;
-    }
-    li {
-      margin-bottom: 6px;
-      line-height: 1.3;
-    }
-    a {
-      color: #0E5484;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaditya Kumar Sahu Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #111;
+            padding: 40px 20px;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .header a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #111;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .item-header h3 {
+            font-size: 18px;
+        }
+
+        .item-header span {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .sub-title {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .skills p {
+            margin-bottom: 8px;
+        }
+
+        .skills strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        @media (max-width: 700px) {
+            .resume {
+                padding: 24px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .item-header {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>AADITYA KUMAR SAHU</h1>
-  <div class="contact">
-    +91 7017356174 | 
-    <a href="mailto:aadityasahu1203@gmail.com">aadityasahu1203@gmail.com</a> | 
-    <a href="https://www.linkedin.com/in/aaditya-kumar-sahu-aadicoder/">LinkedIn</a> | 
-    <a href="https://github.com/aadicoder1">GitHub</a> | 
-    <a href="https://leetcode.com/u/aadicoder1/">Leetcode</a>
-  </div>
 
-  <div class="section">
-    <h2>SUMMARY</h2>
-    <p>
-      Enthusiastic and self-motivated IT undergraduate with foundational knowledge in programming and data structures.  
-      Passionate about learning new technologies and building practical projects. Seeking opportunities to grow and contribute in software development.
-    </p>
-  </div>
+<div class="resume">
 
-  <div class="section">
-    <h2>EDUCATION</h2>
-    <div class="subheading">
-      G.L. BAJAJ INSTITUTE OF TECHNOLOGY AND MANAGEMENT, Greater Noida, India
+    <!-- Header -->
+    <div class="header">
+        <h1>Aaditya Kumar Sahu</h1>
+
+        <p>
+            +91 7017356174 |
+            <a href="mailto:aadityasahu1203@gmail.com">
+                aadityasahu1203@gmail.com
+            </a> |
+            <a href="https://www.linkedin.com/in/aaditya-kumar-sahu-aadicoder/" target="_blank">
+                LinkedIn
+            </a> |
+            <a href="https://github.com/aadicoder1" target="_blank">
+                GitHub
+            </a> |
+            <a href="https://aadicoder1.netlify.app" target="_blank">
+                Portfolio
+            </a>
+        </p>
     </div>
-    <div>Bachelor of Technology in Information Technology (2024 - 2028)</div>
-    <div>CGPA: [Current] 7.64</div>
-    
-    <div class="subheading" style="margin-top: 15px;">
-      Kendriya Vidyalaya No. 2, Agra Cantt., India
+
+    <!-- Summary -->
+    <div class="section">
+        <h2>Summary</h2>
+
+        <p>
+            IT undergraduate skilled in building full-stack web applications using
+            Python, Flask, Django, and FastAPI. Built real-world projects including
+            an AI-powered multilingual document intelligence system and a hackathon-demonstrated
+            community platform. Seeking a software development internship to contribute and grow.
+        </p>
     </div>
-    <div>12th Grade (2022 - 2024) - Aggregate: 76.6%</div>
-    <div>10th Grade (2012 - 2022) - Aggregate: 89.6%</div>
-  </div>
 
-  <div class="section">
-    <h2>TECHNICAL SKILLS</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Java, Python , C</li>
-      <li><strong>Frameworks & Tools:</strong> Flask, Django, SQLite, Git</li>
-      <li><strong>Web Development:</strong> HTML, CSS, Bootstrap</li>
-      <li><strong>Database:</strong> SQLite , MySQL</li>
-      <li><strong>Problem Solving:</strong> Data Structures and Algorithms</li>
-    </ul>
-  </div>
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
 
-  <div class="section">
-    <h2>PROJECTS</h2>
+        <div class="item">
+            <div class="item-header">
+                <h3>G.L. Bajaj Institute of Technology and Management</h3>
+                <span>2024 - 2028</span>
+            </div>
 
-    <div class="subheading">SocioSphere - Community Issue Reporting & NGO Collaboration Platform | <a href="https://github.com/aadicoder1/sociosphere">GitHub</a></div>
-    <ul>
-      <li>Developed a Flask-based web application enabling users to report community issues with location and images, and NGOs to view, manage, and resolve these issues.</li>
-      <li>Implemented user and NGO authentication, role-based access, and a user-friendly dashboard for managing reports and events.</li>
-      <li>Integrated SQLite database for persistent storage and built RESTful routes for smooth front-end and back-end communication.</li>
-      <li>Designed responsive UI with Bootstrap for easy navigation and data visualization.</li>
-      <li>Added features like event posting by NGOs and notification emails upon issue reporting to keep stakeholders updated.</li>
-    </ul>
+            <div class="sub-title">
+                Bachelor of Technology in Information Technology | Greater Noida, India
+            </div>
 
-    <div class="subheading" style="margin-top:15px;">Music Player Web App | <a href="https://github.com/aadicoder1/echo">GitHub</a></div>
-  <ul>
-    <li>Built a Django web application to play, organize, and manage music tracks with user-friendly UI.</li>
-    <li>Implemented features like playlists, search, and audio controls using Django backend and HTML/CSS frontend.</li>
-  </ul>
+            <ul>
+                <li>CGPA: 7.77</li>
+            </ul>
+        </div>
 
-    <div class="subheading" style="margin-top:15px;">Smart Stock Crash Predictor (In Progress) | <a href="https://github.com/aadicoder1/TradeSafe">GitHub</a></div>
-    <ul>
-      <li>Working on a stock market crash prediction system using React.js and Django, integrating financial APIs and notification services.</li>
-      <li>Plan to add machine learning models for market trend analysis and automated portfolio management features.</li>
-    </ul>
-  </div>
+        <div class="item">
+            <div class="item-header">
+                <h3>Kendriya Vidyalaya No. 2, Agra Cantt.</h3>
+                <span>2022 - 2024</span>
+            </div>
 
-  <div class="section">
-    <h2>ACHIEVEMENTS</h2>
-    <ul>
-       <li>Active learner practicing Data Structures and Algorithms through regular coding exercises.</li>
-      <li>Completed several online programming challenges to strengthen problem-solving skills.</li>
-      <li>Participated in college coding events and workshops to improve practical coding experience.</li>
-    </ul>
-  </div>
-  <h2>EXTRACURRICULAR ACTIVITIES</h2>
-  <ul>
-    <li>Participating in hackathons to solve real-world problems and build teamwork skills.</li>
-    <li>Active participant in Google Cloud Skills Boost Arcade program for continuous learning and challenges.</li>
-  </ul>
+            <div class="sub-title">
+                Class XII - 76.6% | Class X - 89.6%
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section skills">
+        <h2>Technical Skills</h2>
+
+        <p><strong>Languages:</strong> Java (OOP), Python (OOP), C</p>
+        <p><strong>Frameworks:</strong> Flask, Django, FastAPI</p>
+        <p><strong>Web:</strong> HTML, CSS, Bootstrap, JavaScript (basic)</p>
+        <p><strong>Databases:</strong> SQLite, MySQL, PostgreSQL</p>
+        <p><strong>Tools:</strong> Git, GitHub</p>
+        <p><strong>APIs:</strong> HuggingFace Inference API</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <h2>Projects</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>KMRL SmartDocs - AI Document Intelligence System</h3>
+                <span>2025</span>
+            </div>
+
+            <div class="sub-title">
+                FastAPI, HuggingFace, HTML/CSS |
+                <a href="https://github.com/aadicoder1/KMRL_DMS" target="_blank">
+                    GitHub
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    Built an AI-powered document intelligence system inspired by a
+                    Smart India Hackathon (SIH) problem statement for Kochi Metro Rail Limited (KMRL).
+                </li>
+
+                <li>
+                    Integrated HuggingFace Inference API to summarize uploaded documents
+                    across major Indian regional languages.
+                </li>
+
+                <li>
+                    Developed FastAPI backend with SQLite for document storage and multilingual summary display.
+                </li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>SocioSphere - Community Issue Reporting Platform</h3>
+                <span>2025</span>
+            </div>
+
+            <div class="sub-title">
+                Flask, OAuth, SQLite, Bootstrap |
+                <a href="https://github.com/aadicoder1/SocioSphere" target="_blank">
+                    GitHub
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    Built and demonstrated at HackLoop, an inter-city hackathon at Thoughtworks, Gurugram.
+                </li>
+
+                <li>
+                    Enabled citizens to report issues with location and images while NGOs manage reports.
+                </li>
+
+                <li>
+                    Implemented OAuth-based authentication with role-based access control.
+                </li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>Echo - Music Player Web App</h3>
+                <span>2024</span>
+            </div>
+
+            <div class="sub-title">
+                Django, SQLite, HTML/CSS |
+                <a href="https://github.com/aadicoder1/musicplayer" target="_blank">
+                    GitHub
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    Built a full-stack Django music player as a self-initiated learning project.
+                </li>
+
+                <li>
+                    Implemented track listing, playback controls, and like/unlike functionality.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+        <h2>Experience</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>GDG on Campus - GL Bajaj</h3>
+                <span>Oct 2025 - Present</span>
+            </div>
+
+            <div class="sub-title">
+                Developer | Greater Noida, India
+            </div>
+
+            <ul>
+                <li>
+                    Selected as Developer through an interview process for the GDG campus chapter.
+                </li>
+
+                <li>
+                    Contributed frontend code to the official GDG GLBITM website.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section">
+        <h2>Achievements & Certifications</h2>
+
+        <ul>
+            <li>
+                <strong>HackLoop Hackathon:</strong>
+                Participated and presented SocioSphere at Thoughtworks, Gurugram.
+            </li>
+
+            <li>
+                <strong>Smart India Hackathon (SIH):</strong>
+                Cleared internal college selection round with an AI document intelligence solution.
+            </li>
+
+            <li>
+                <strong>DSA Course:</strong>
+                Currently completing a Data Structures & Algorithms course.
+            </li>
+        </ul>
+    </div>
+
 </div>
+
 </body>
 </html>
