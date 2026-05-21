@@ -31,8 +31,8 @@ export const MY_STACK = {
             icon:'/logo/C.webp'
         },
         {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
+            name:'C++',
+            icon:'/logo/Cpp.webp'
         },
     ],
     frontend: [
@@ -107,10 +107,6 @@ export const MY_STACK = {
             icon: '/logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
             name: 'AWS',
             icon: '/logo/aws.png',
         },
@@ -118,6 +114,60 @@ export const MY_STACK = {
 };
 
 export const PROJECTS: IProject[] = [
+
+    {
+    title: 'KMRL DMS',
+    slug: 'kmrl-dms',
+    techStack: [
+        'FastAPI',
+        'SQLite',
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'Bootstrap',
+        'FastAPI-Mail',
+    ],
+    thumbnail: '/projects/thumbnail/kmrl.png', 
+    longThumbnail: '/projects/long/kmrl.png',
+    images: [
+        '/projects/images/kmrl-smartdocs-1.webp',
+        '/projects/images/kmrl-smartdocs-2.webp',
+    ],
+    liveUrl: 'https://kmrl-smartdocs-demo.vercel.app/', // replace with your hosted link
+    year: 2025,
+    description: `
+    KMRL SmartDocs is a digital document management system designed for Kochi Metro Rail Limited to streamline internal workflows and documentation. 
+    It enables secure upload, approval, and retrieval of organizational files within an easy-to-use dashboard. <br/><br/>
+    
+    Key Features:<br/>
+    <ul>
+        <li>📂 Document Upload & Management: Secure document storage with categorized folders</li>
+        <li>🧾 Approval Workflow: Role-based verification and approval for submitted files</li>
+        <li>🔐 Authentication System: Login-based access for admins and staff</li>
+        <li>📧 Email Alerts: Automatic mail notifications for document status updates</li>
+        <li>📱 Responsive Dashboard: Simple, accessible interface for all devices</li>
+    </ul><br/>
+
+    Technical Highlights:<br/>
+    <ul>
+        <li>Developed backend in FastAPI with SQLite for lightweight, efficient data handling</li>
+        <li>Implemented file upload and role-based document approval modules</li>
+        <li>Used FastAPI-Mail for automated notifications</li>
+        <li>Ensured mobile responsiveness and cross-browser compatibility</li>
+    </ul>
+    `,
+    role: `
+    Full-Stack Developer <br/>
+    Led the complete development and deployment process:
+    <ul>
+        <li>🧩 Designed the database schema for document and user management</li>
+        <li>⚙️ Built secure FastAPI routes for uploading, approving, and retrieving documents</li>
+        <li>🎨 Developed the frontend using HTML, CSS, and Bootstrap for a clean layout</li>
+        <li>📧 Integrated FastAPI-Mail for real-time notifications</li>
+        <li>🚀 Deployed and tested across environments ensuring performance and reliability</li>
+    </ul>
+    `,
+},
     {
     title: 'SocioSphere',
     slug: 'sociosphere',
@@ -174,60 +224,6 @@ export const PROJECTS: IProject[] = [
     ],
 },
 
-    {
-    title: 'KMRL SmartDocs',
-    slug: 'kmrl-smartdocs',
-    techStack: [
-        'FastAPI',
-        'SQLite',
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'Bootstrap',
-        'FastAPI-Mail',
-    ],
-    thumbnail: '/projects/thumbnail/kmrl.png', 
-    longThumbnail: '/projects/long/kmrl.png',
-    images: [
-        '/projects/images/kmrl-smartdocs-1.webp',
-        '/projects/images/kmrl-smartdocs-2.webp',
-    ],
-    liveUrl: 'https://kmrl-smartdocs-demo.vercel.app/', // replace with your hosted link
-    year: 2025,
-    description: `
-    KMRL SmartDocs is a digital document management system designed for Kochi Metro Rail Limited to streamline internal workflows and documentation. 
-    It enables secure upload, approval, and retrieval of organizational files within an easy-to-use dashboard. <br/><br/>
-    
-    Key Features:<br/>
-    <ul>
-        <li>📂 Document Upload & Management: Secure document storage with categorized folders</li>
-        <li>🧾 Approval Workflow: Role-based verification and approval for submitted files</li>
-        <li>🔐 Authentication System: Login-based access for admins and staff</li>
-        <li>📧 Email Alerts: Automatic mail notifications for document status updates</li>
-        <li>📱 Responsive Dashboard: Simple, accessible interface for all devices</li>
-    </ul><br/>
-
-    Technical Highlights:<br/>
-    <ul>
-        <li>Developed backend in FastAPI with SQLite for lightweight, efficient data handling</li>
-        <li>Implemented file upload and role-based document approval modules</li>
-        <li>Used FastAPI-Mail for automated notifications</li>
-        <li>Ensured mobile responsiveness and cross-browser compatibility</li>
-    </ul>
-    `,
-    role: `
-    Full-Stack Developer <br/>
-    Led the complete development and deployment process:
-    <ul>
-        <li>🧩 Designed the database schema for document and user management</li>
-        <li>⚙️ Built secure FastAPI routes for uploading, approving, and retrieving documents</li>
-        <li>🎨 Developed the frontend using HTML, CSS, and Bootstrap for a clean layout</li>
-        <li>📧 Integrated FastAPI-Mail for real-time notifications</li>
-        <li>🚀 Deployed and tested across environments ensuring performance and reliability</li>
-    </ul>
-    `,
-},
-
 {
     title: 'Echo',
     slug: 'echo',
@@ -282,62 +278,6 @@ export const PROJECTS: IProject[] = [
     `,
 }
 ,
-
-{
-    title: 'TradeSafe ( In progress)',
-    slug: 'tradesafe',
-    techStack: [
-        'Flask',
-        'SQLite',
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'Bootstrap',
-        'Flask-Login',
-        'Werkzeug',
-    ],
-    thumbnail: '/projects/thumbnail/tradesafe.webp', // replace with your image
-    longThumbnail: '/projects/long/tradesafe.webp',
-    images: [
-        '/projects/images/tradesafe-1.webp',
-        '/projects/images/tradesafe-2.webp',
-        '/projects/images/tradesafe-3.webp',
-    ],
-    liveUrl: '#', // replace with deployed link
-    year: 2025,
-    description: `
-    TradeSafe is a secure trading platform designed to facilitate trustworthy transactions between buyers and sellers. 
-    It allows users to create accounts, list items, report issues, and track transactions with enhanced security measures. <br/><br/>
-
-    Key Features:<br/>
-    <ul>
-        <li>🔒 User Authentication: Secure login and registration with Flask-Login</li>
-        <li>📋 Product Listings: Create, edit, and delete listings for trade items</li>
-        <li>⚠️ Issue Reporting: Users can report issues which admins/NGOs can manage</li>
-        <li>📧 Notifications: Email alerts for important actions or updates</li>
-        <li>📱 Responsive Design: Optimized for desktop and mobile devices</li>
-    </ul><br/>
-
-    Technical Highlights:<br/>
-    <ul>
-        <li>Backend built with Flask and SQLite for lightweight, efficient data handling</li>
-        <li>User authentication implemented using Flask-Login and Werkzeug security</li>
-        <li>Dynamic content management for listings and issue tracking</li>
-        <li>Email integration for notifications using Flask-Mail</li>
-    </ul>
-    `,
-    role: `
-    Full-Stack Developer <br/>
-    Managed the full development lifecycle:
-    <ul>
-        <li>⚙️ Backend: Built secure Flask routes and database models for users and listings</li>
-        <li>🎨 Frontend: Developed responsive UI using HTML, CSS, and Bootstrap</li>
-        <li>🔄 State Management: Handled dynamic listing updates and issue reports</li>
-        <li>📧 Notifications: Integrated email alerts for user actions and issue updates</li>
-        <li>🚀 Deployment: Configured and deployed the project on cloud hosting</li>
-    </ul>
-    `,
-},
     
 ];
 
@@ -345,6 +285,6 @@ export const MY_EXPERIENCE = [
     {
         title: 'Developer (Part-time)',
         company: 'GDG GLBITM (College club)',
-        duration: 'Oct 2025 - Present',
+        duration: 'Oct 2025 - May 2026',
     },
 ];
