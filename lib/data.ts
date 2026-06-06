@@ -116,6 +116,67 @@ export const MY_STACK = {
 export const PROJECTS: IProject[] = [
 
     {
+    title: 'EduMind',
+    slug: 'edumind',
+    techStack: [
+        'Spring Boot',
+        'React',
+        'Tailwind CSS',
+        'PostgreSQL',
+        'Supabase',
+        'Groq AI',
+        'Docker',
+        'AWS EC2',
+        'GitHub Actions',
+        'JWT',
+    ],
+    thumbnail: '/projects/thumbnail/edumind.png',
+    longThumbnail: '/projects/long/edumind.png',
+    images: [
+        '/projects/images/edumind-1.webp',
+        '/projects/images/edumind-2.webp',
+    ],
+    liveUrl: 'https://edumind.vercel.app/', // replace with your hosted link
+    year: 2025,
+    description: `
+    EduMind is a full-stack AI-powered study assistant built for Indian university students to study smarter.
+    Upload your PDFs or images and EduMind automatically generates summaries, flashcards, and lets you chat
+    with your own notes — all powered by Groq's LLaMA 3.3 70B model. <br/><br/>
+
+    Key Features:<br/>
+    <ul>
+        <li>🤖 AI Summarization: Auto-generate concise summaries from uploaded notes</li>
+        <li>🃏 Flashcard Generation: AI creates flashcards for quick revision</li>
+        <li>💬 Chat with Notes: ChatGPT-style persistent conversations per note</li>
+        <li>📂 Smart Organization: Notes organized by Course → Year → Semester → Subject → Chapter</li>
+        <li>🌍 Community: Browse and learn from other students' public notes</li>
+        <li>🔐 Google OAuth + JWT: Secure one-click login with token-based authentication</li>
+        <li>🐳 Docker + CI/CD: Containerized deployment with automated GitHub Actions pipeline</li>
+    </ul><br/>
+
+    Technical Highlights:<br/>
+    <ul>
+        <li>Spring Boot REST API deployed on AWS EC2 via Docker</li>
+        <li>React + Tailwind CSS frontend deployed on Vercel</li>
+        <li>Groq AI (LLaMA 3.3 70B) for summarization, flashcards, and context-aware chat</li>
+        <li>AI outputs cached in PostgreSQL to avoid redundant API calls</li>
+        <li>Supabase for PostgreSQL database and file storage</li>
+        <li>Automated CI/CD pipeline using GitHub Actions</li>
+    </ul>
+    `,
+    role: `
+    Full-Stack Developer <br/>
+    Led the complete design, development, and deployment of the platform:
+    <ul>
+        <li>🧩 Designed the full database schema across users, subjects, chapters, notes, AI outputs, and chat messages</li>
+        <li>⚙️ Built Spring Boot REST API with Google OAuth2, JWT authentication, and role-based access</li>
+        <li>🤖 Integrated Groq AI for summarization, flashcard generation, and multi-turn note chat</li>
+        <li>🎨 Developed React + Tailwind frontend with ChatGPT-style conversation sidebar</li>
+        <li>🐳 Containerized backend with Docker and deployed on AWS EC2 with GitHub Actions CI/CD</li>
+    </ul>
+    `,
+},
+    {
     title: 'KMRL DMS',
     slug: 'kmrl-dms',
     techStack: [
