@@ -1,4 +1,10 @@
+%-------------------------
+% Jake's Resume Template
+% Adapted for Aaditya Kumar Sahu
+%-------------------------
+
 \documentclass[letterpaper,11pt]{article}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -88,7 +94,7 @@
 %-----------SUMMARY-----------
 \section{Summary}
   \small{
-    IT undergraduate skilled in building full-stack web applications using Python, Flask, Django, and FastAPI. Built real-world projects including an AI-powered multilingual document intelligence system and a hackathon-demonstrated community platform. Seeking a software development internship to contribute and grow.
+    IT undergraduate skilled in building full-stack web applications using Java and Python. Built production-grade projects including an AI-powered study assistant with Spring Boot, React, and AWS, a multilingual document intelligence system, and a hackathon-demonstrated community platform. Seeking a software development internship to contribute and grow.
   }
 
 %-----------EDUCATION-----------
@@ -110,11 +116,12 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java (OOP), Python (OOP), C} \\
-     \textbf{Frameworks}{: Flask, Django, FastAPI} \\
-     \textbf{Web}{: HTML, CSS, Bootstrap, JavaScript (basic)} \\
-     \textbf{Databases}{: SQLite, MySQL, PostgreSQL} \\
-     \textbf{Tools}{: Git, GitHub} \\
-     \textbf{APIs}{: HuggingFace Inference API} \\
+     \textbf{Frameworks}{: Spring Boot, Flask, Django, FastAPI, React} \\
+     \textbf{Web}{: HTML, CSS, Tailwind CSS, Bootstrap, JavaScript} \\
+     \textbf{Databases}{: PostgreSQL, SQLite, MySQL, Supabase} \\
+     \textbf{Tools}{: Git, GitHub, Docker, GitHub Actions, JWT} \\
+     \textbf{Cloud \& DevOps}{: AWS EC2, Vercel, Render, CI/CD Pipelines} \\
+     \textbf{APIs}{: Groq AI (LLaMA 3.3 70B), HuggingFace Inference API} \\
     }}
  \end{itemize}
 
@@ -123,26 +130,29 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
+      {\textbf{EduMind -- AI-Powered Study Assistant} $|$ \emph{Spring Boot, React, Groq AI, Docker, AWS} $|$ \href{https://github.com/aadicoder1/EduMind}{\underline{GitHub}}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built a full-stack AI study platform for Indian university students to upload PDFs/images and auto-generate summaries, flashcards, and chat with their notes using Groq's LLaMA 3.3 70B model.}
+        \resumeItem{Designed note organization (Course $\rightarrow$ Year $\rightarrow$ Semester $\rightarrow$ Subject $\rightarrow$ Chapter) with Google OAuth, JWT auth, and public/private note sharing for a student community.}
+        \resumeItem{Deployed Spring Boot REST API on \textbf{AWS EC2} via Docker with React + Tailwind frontend on Vercel; automated CI/CD pipeline via GitHub Actions.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
       {\textbf{KMRL SmartDocs -- AI Document Intelligence System} $|$ \emph{FastAPI, HuggingFace, HTML/CSS} $|$ \href{https://github.com/aadicoder1/KMRL_DMS}{\underline{GitHub}}}{2025}
       \resumeItemListStart
-        \resumeItem{Built an AI-powered document intelligence system inspired by a Smart India Hackathon (SIH) problem statement for Kochi Metro Rail Limited (KMRL).}
-        \resumeItem{Integrated HuggingFace Inference API to summarize uploaded documents across all major Indian regional languages including Hindi, Tamil, Telugu, and Malayalam.}
-        \resumeItem{Developed FastAPI backend with SQLite for document storage; clean HTML/CSS frontend for upload and multilingual summary display.}
+        \resumeItem{Built an AI-powered document intelligence system inspired by a Smart India Hackathon (SIH) problem statement
+for Kochi Metro Rail Limited (KMRL).}
+        \resumeItem{Integrated HuggingFace Inference API to summarize uploaded documents across all major Indian regional
+languages including Hindi, Tamil, Telugu, and Malayalam.}
+        \resumeItem{Developed FastAPI backend with SQLite for document storage; clean HTML/CSS frontend for upload and
+multilingual summary display}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{SocioSphere -- Community Issue Reporting Platform} $|$ \emph{Flask, OAuth, SQLite, Bootstrap} $|$ \href{https://github.com/aadicoder1/SocioSphere}{\underline{GitHub}} }{2025}
+      {\textbf{SocioSphere -- Community Issue Reporting Platform} $|$ \emph{Flask, OAuth, SQLite, Bootstrap} $|$ \href{https://github.com/aadicoder1/SocioSphere}{\underline{GitHub}}}{2025}
       \resumeItemListStart
-        \resumeItem{Built and demonstrated at \textbf{HackLoop}, an inter-city hackathon at Thoughtworks, Gurugram, competing against participants from multiple cities.}
-        \resumeItem{Flask web app enabling citizens to report community issues with location and images; NGOs can view, manage, and resolve reports across 15+ routes.}
+        \resumeItem{Built and demonstrated at \textbf{HackLoop}, an inter-city hackathon at Thoughtworks, Gurugram; Flask app enabling citizens to report issues and NGOs to manage them across 15+ routes.}
         \resumeItem{Implemented OAuth-based authentication with role-based access control; deployed live on Render.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Echo -- Music Player Web App} $|$ \emph{Django, SQLite, HTML/CSS} $|$ \href{https://github.com/aadicoder1/musicplayer}{\underline{GitHub}}}{2024}
-      \resumeItemListStart
-        \resumeItem{Built a full-stack Django music player as a self-initiated learning project after completing a Python/Django bootcamp.}
-        \resumeItem{Implemented core features including track listing, like/unlike functionality, and next/previous playback controls with a custom-designed HTML/CSS frontend.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
