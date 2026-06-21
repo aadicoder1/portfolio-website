@@ -137,7 +137,7 @@ export const PROJECTS: IProject[] = [
         '/projects/images/edumind-2.webp',
     ],
     liveUrl: 'https://edumind.vercel.app/', // replace with your hosted link
-    year: 2025,
+    year: 2026,
     description: `
     EduMind is a full-stack AI-powered study assistant built for Indian university students to study smarter.
     Upload your PDFs or images and EduMind automatically generates summaries, flashcards, and lets you chat
