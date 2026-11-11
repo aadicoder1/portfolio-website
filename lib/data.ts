@@ -116,6 +116,65 @@ export const MY_STACK = {
 export const PROJECTS: IProject[] = [
 
     {
+    title: 'AapdaDrishti',
+    slug: 'aapdadrishti',
+    techStack: [
+        'FastAPI',
+        'React',
+        'Leaflet',
+        'GeoPandas',
+        'OpenStreetMap',
+        'YOLOv8',
+        'Gemini API',
+        'OpenCV',
+        'Python',
+    ],
+    thumbnail: '/projects/thumbnail/aapdadrishti.png',
+    longThumbnail: '/projects/long/aapdadrishti.png',
+    images: [
+        '/projects/images/aapdadrishti-1.webp',
+        '/projects/images/aapdadrishti-2.webp',
+    ],
+    liveUrl: 'https://aapdadrishti360.vercel.app', // replace with your repo or demo link
+    year: 2026,
+    description: `
+    AapdaDrishti is a GIS-based disaster planning platform built for Smart India Hackathon 2026 (PS 26191, MHA/NDRF).
+    It marks hazard-prone red zones, ranks safer sites to relocate villages to, and checks whether the roads to those
+    sites are actually passable. If a drone sees a blocked route, the system drops that site and moves to the next best one. <br/><br/>
+
+    Key Features:<br/>
+    <ul>
+        <li>🗺️ Red Zone Mapping: Landslide, cloudburst, cyclone and storm surge zones built from terrain and hazard data</li>
+        <li>🏘️ Site Suitability Ranking: Candidate relocation sites scored on safety, slope and capacity</li>
+        <li>🛣️ Route Feasibility Score: Every route is marked verified clear, verified blocked or unverified</li>
+        <li>🚁 Drone Reroute: Upload drone footage and the route is re-ranked automatically if something is blocked</li>
+        <li>🌍 Two Demo Regions: Rudraprayag (Uttarakhand) and Puri (Odisha), each with its own hazard types</li>
+        <li>🔍 Real vs Simulated: Every data field carries a provenance flag, so nothing is passed off as live data</li>
+    </ul><br/>
+
+    Technical Highlights:<br/>
+    <ul>
+        <li>SRTM elevation data and OSM road graph processed with GeoPandas, Shapely and rasterio</li>
+        <li>Rerouting removes road edges within 500m of the blockage and reruns shortest path (Dijkstra)</li>
+        <li>Gemini samples drone video one frame per second via OpenCV to detect blockages</li>
+        <li>Detection fails loudly instead of silently returning "not blocked", since that is dangerous in a disaster tool</li>
+        <li>YOLOv8 + ByteTrack rescue pipeline kept as a secondary module for response after planning</li>
+        <li>FastAPI backend with a React + Leaflet frontend</li>
+    </ul>
+    `,
+    role: `
+    Team Lead and Full-Stack Developer <br/>
+    Led the team and built most of the system end to end:
+    <ul>
+        <li>🧩 Designed the data pipeline from OSM fetch and DEM slope to hazard zones and vulnerability scoring</li>
+        <li>⚙️ Built the site ranking and route feasibility logic with three-state route verification</li>
+        <li>🤖 Integrated Gemini drone vision and the blockage-avoiding reroute with site fallback</li>
+        <li>🎨 Developed the React + Leaflet dashboard with drone footage upload and inline reroute results</li>
+        <li>📊 Prepared the architecture diagram, real-data charts and judge Q&A for the pitch</li>
+    </ul>
+    `,
+},
+    {
     title: 'EduMind',
     slug: 'edumind',
     techStack: [
@@ -125,6 +184,9 @@ export const PROJECTS: IProject[] = [
         'PostgreSQL',
         'Supabase',
         'Groq AI',
+        'ESP32',
+        'Node.js',
+        'WebSocket',
         'Docker',
         'AWS EC2',
         'GitHub Actions',
@@ -136,12 +198,12 @@ export const PROJECTS: IProject[] = [
         '/projects/images/edumind-1.webp',
         '/projects/images/edumind-2.webp',
     ],
-    liveUrl: 'https://edumind.vercel.app/', // replace with your hosted link
+    liveUrl: 'https://github.com/aadicoder1/edumind/', // replace with your hosted link
     year: 2026,
     description: `
-    EduMind is a full-stack AI-powered study assistant built for Indian university students to study smarter.
-    Upload your PDFs or images and EduMind automatically generates summaries, flashcards, and lets you chat
-    with your own notes — all powered by Groq's LLaMA 3.3 70B model. <br/><br/>
+    EduMind is a full-stack AI-powered study assistant for Indian university students, now paired with
+    DeskBuddy, an ESP32-based voice assistant for your study desk. Upload PDFs or images and EduMind generates
+    summaries, flashcards, and lets you chat with your own notes, powered by Groq's LLaMA 3.3 70B model. <br/><br/>
 
     Key Features:<br/>
     <ul>
@@ -150,6 +212,7 @@ export const PROJECTS: IProject[] = [
         <li>💬 Chat with Notes: ChatGPT-style persistent conversations per note</li>
         <li>📂 Smart Organization: Notes organized by Course → Year → Semester → Subject → Chapter</li>
         <li>🌍 Community: Browse and learn from other students' public notes</li>
+        <li>🎙️ DeskBuddy (IoT): Voice-controlled desk bot with Normal (alarms, reminders, clock), Study and Fun modes</li>
         <li>🔐 Google OAuth + JWT: Secure one-click login with token-based authentication</li>
         <li>🐳 Docker + CI/CD: Containerized deployment with automated GitHub Actions pipeline</li>
     </ul><br/>
@@ -161,17 +224,19 @@ export const PROJECTS: IProject[] = [
         <li>Groq AI (LLaMA 3.3 70B) for summarization, flashcards, and context-aware chat</li>
         <li>AI outputs cached in PostgreSQL to avoid redundant API calls</li>
         <li>Supabase for PostgreSQL database and file storage</li>
+        <li>DeskBuddy: ESP32 with INMP441 mic, MAX98357A speaker and OLED, streaming audio over WebSocket to a Node.js server (Whisper STT → Groq LLM → Piper TTS), with English and Hindi support</li>
         <li>Automated CI/CD pipeline using GitHub Actions</li>
     </ul>
     `,
     role: `
-    Full-Stack Developer <br/>
+    Full-Stack & IoT Developer <br/>
     Led the complete design, development, and deployment of the platform:
     <ul>
         <li>🧩 Designed the full database schema across users, subjects, chapters, notes, AI outputs, and chat messages</li>
         <li>⚙️ Built Spring Boot REST API with Google OAuth2, JWT authentication, and role-based access</li>
         <li>🤖 Integrated Groq AI for summarization, flashcard generation, and multi-turn note chat</li>
         <li>🎨 Developed React + Tailwind frontend with ChatGPT-style conversation sidebar</li>
+        <li>🔌 Built DeskBuddy end to end: ESP32 I2S firmware, WebSocket server and voice pipeline, with EduMind integration in progress</li>
         <li>🐳 Containerized backend with Docker and deployed on AWS EC2 with GitHub Actions CI/CD</li>
     </ul>
     `,
@@ -347,5 +412,10 @@ export const MY_EXPERIENCE = [
         title: 'Developer (Part-time)',
         company: 'GDG GLBITM (College club)',
         duration: 'Oct 2025 - May 2026',
+    },
+    {
+        title: 'Software & Embedded Systems Intern',
+        company: '509 Army Base Workshop (Indian Army EME corps.) , Agra Cantt',
+        duration: 'May 2026 - June 2026',
     },
 ];
